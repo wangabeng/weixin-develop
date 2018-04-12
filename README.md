@@ -10,14 +10,50 @@ page {
 }
 
 ## align-items分2种情况(垂直方向对齐 即侧轴对齐方式)
-1 多行排列：
-改变多行排列的多个元素的对齐方式 比如多行靠左排列
+1 多行排列（容器为flex-direction: column）：
+改变多行排列的多个元素的对齐方式 比如多行垂直方向靠左排列
   align-items: flex-start;// flex-start flex-end center center strech baseline
-2 单行排列
+2 单行排列（容器为flex-direction: row）
 单行排列的元素高度可能不同 在垂直方向的对齐方式
 align-items: flex-start;// flex-start flex-end center center strech baseline
 
-## align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
+## align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用 
+  类似正常布局的float布局 父级元素display: flex flex-direction: row flex-wrap: wrap(必要条件)
+  https://www.cnblogs.com/liyu2012/p/5525609.html
+  html：
+  <view class='test2'>
+    <text>aaaa</text>
+    <text>bbb</text>
+    <text>ccc</text>
+    <text>ddd</text>
+    <text>eee</text>
+    <text>fffffff</text>
+    <text>gggg</text>
+    <text>hhhhh</text>
+    <text>iiiiiii</text>
+    <text>jjjjj</text>
+    <text>kkkkk</text>
+    <text>mmmm</text>
+    <text>nnnnnn</text>
+  </view>
+  
+  css：
+  .test2 {
+    display: flex;
+    flex-direction: row; // 必要条件
+    flex-wrap: wrap;  // 必要条件
+    background: gray;
+    width: 800rpx;
+    height: 600rpx;
+    align-content: space-around; // flex-start | flex-end | center | space-between | space-around | stretch
+  }
+  .test2 text {
+    width: 150rpx;
+    height: 60rpx;
+    background-color: red;
+    border: 1px solid green;
+    margin-top: 10rpx;
+  }
 
 ## justify-content 改变一行排列的多个元素的对齐方式 比如一行靠左排列
   jutify-content: flex-start;
