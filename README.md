@@ -9,8 +9,15 @@ page {
   background-color: #fff;
 }
 
-## align-items改变多行排列的多个元素的对齐方式 比如多行靠左排列
-  align-itemS: flex-start;
+## align-items分2种情况(垂直方向对齐 即侧轴对齐方式)
+1 多行排列：
+改变多行排列的多个元素的对齐方式 比如多行靠左排列
+  align-items: flex-start;// flex-start flex-end center center strech baseline
+2 单行排列
+单行排列的元素高度可能不同 在垂直方向的对齐方式
+align-items: flex-start;// flex-start flex-end center center strech baseline
+
+## align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
 
 ## justify-content 改变一行排列的多个元素的对齐方式 比如一行靠左排列
   jutify-content: flex-start;
@@ -21,6 +28,7 @@ page {
   box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
 
 ## block块元素设置了margin-left 其宽度会自动减少相应的值
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 
 ## 多行文本溢出省略号
   单行 html
