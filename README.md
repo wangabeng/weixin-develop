@@ -16,25 +16,27 @@ page {
   jutify-content: flex-start;
 
 ## 微信中1px边线设置
-border-bottom: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  阴影设置
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
 
 ## block块元素设置了margin-left 其宽度会自动减少相应的值
 
 ## 多行文本溢出省略号
-单行 html
+  单行 html
     width: 70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 
-效果如图： 文本的溢出显示省略号同学们......
+  效果如图： 文本的溢出显示省略号同学们......
 
-多行文本: font-size: .2rem; line-height: .3rem; height: .9rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; /自动显示3行 多出的部分用...代替/
+  多行文本: font-size: .2rem; line-height: .3rem; height: .9rem; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; /自动显示3行 多出的部分用...代替/
 
 ## 文本元素不要分行 否则会增加不可控的空白部分
-可取的写法：
-<text class='add-title p'>快速添加CGI指引</text>  
-不可取的写法：
-<text class='add-title p'>
-  快速添加CGI指引
-</text>
+  可取的写法：
+  <text class='add-title p'>快速添加CGI指引</text>  
+  不可取的写法：
+  <text class='add-title p'>
+    快速添加CGI指引
+  </text>
