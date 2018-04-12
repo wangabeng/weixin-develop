@@ -17,7 +17,7 @@ page {
 单行排列的元素高度可能不同 在垂直方向的对齐方式
 align-items: flex-start;// flex-start flex-end center center strech baseline
 
-## align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用 
+## align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用 （可用于流式布局）
   类似正常布局的float布局 父级元素display: flex flex-direction: row flex-wrap: wrap(必要条件)
   https://www.cnblogs.com/liyu2012/p/5525609.html
   html：
