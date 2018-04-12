@@ -84,3 +84,5 @@ align-items: flex-start;// flex-start flex-end center center strech baseline
   <text class='add-title p'>
     快速添加CGI指引
   </text>
+## 服务器端的node代码如果不上传到远程腾讯云服务器上 在本地调试微信小程序的时候无法正常请求到数据。因为node提供的服务只是在本地 没有发布到服务器上
+所以 微信小程序node服务的代码必须上传到远程腾讯云服务器 才可以在本地请求到数据
