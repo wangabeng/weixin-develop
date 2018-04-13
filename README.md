@@ -119,3 +119,7 @@ pages/index
 }
 在index中使用
 <songList></songList>
+
+## 小程序组件之间的通信解决方案
+微信小程序组件化的解决方案
+https://zhuanlan.zhihu.com/p/33274694
