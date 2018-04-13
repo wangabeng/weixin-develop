@@ -86,3 +86,35 @@ align-items: flex-start;// flex-start flex-end center center strech baseline
   </text>
 ## 服务器端的node代码如果不上传到远程腾讯云服务器上 在本地调试微信小程序的时候无法正常请求到数据。因为node提供的服务只是在本地 没有发布到服务器上
 所以 微信小程序node服务的代码必须上传到远程腾讯云服务器 才可以在本地请求到数据
+
+## 小程序组件开发
+1 新建目录
+components/songList/songList.wxml   1
+                    songList.js     2
+                    songList.json   3
+                    songList.wxss   4
+pages/index
+第一步 定义组件 备注 必须定义songList.json文件
+ 2 songList.js:
+  Component({
+    methods: {
+      aaa: function (v) {
+        console.log(v)
+      }
+    }
+  })
+ 
+ 3 songList.json
+  {
+    "component": true,
+    "usingComponents": {}
+  }
+第二步 使用
+在index.json中定义
+{
+  "usingComponents": {
+    "songList": "/components/songList/songList"
+  }
+}
+在index中使用
+
