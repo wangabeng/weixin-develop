@@ -88,6 +88,7 @@ align-items: flex-start;// flex-start flex-end center center strech baseline
 所以 微信小程序node服务的代码必须上传到远程腾讯云服务器 才可以在本地请求到数据
 
 ## 小程序组件开发
+https://www.jianshu.com/p/8a2a730d9e60
 1 新建目录
 components/songList/songList.wxml   1
                     songList.js     2
@@ -117,4 +118,4 @@ pages/index
   }
 }
 在index中使用
-
+<songList></songList>
