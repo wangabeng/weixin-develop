@@ -140,3 +140,15 @@ align-items:center
 -webkit-box-pack:center;
 -ms-flex-pack:center;
 justify-content:center;
+
+（flex-direction:column兼容写法）
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-ms-flex-direction:column;
+flex-direction:column;
+
+（flex-direction:row兼容写法）
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+-ms-flex-direction:row;
+flex-direction:row;
