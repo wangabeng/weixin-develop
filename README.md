@@ -124,16 +124,21 @@ pages/index
 微信小程序组件化的解决方案
 https://zhuanlan.zhihu.com/p/33274694
 
-## 知乎 flex布局兼容写法：
+## 知乎 淘宝 flex布局兼容写法：
 父容器：
 （display: flex的兼容写法）
 display:-webkit-box;
+display: -moz-box;
 display:-ms-flexbox;
+display: -webkit-flex;
 display:flex
 
 （flex-direction:column兼容写法）
 -webkit-box-orient:vertical;
 -webkit-box-direction:normal;
+-moz-box-orient: vertical;
+-moz-box-direction: normal;
+-webkit-flex-direction: column;
 -ms-flex-direction:column;
 flex-direction:column;
 
