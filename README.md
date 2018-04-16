@@ -124,5 +124,19 @@ pages/index
 微信小程序组件化的解决方案
 https://zhuanlan.zhihu.com/p/33274694
 
-123 
-Ax123654123654
+## 知乎 flex布局兼容写法：
+父容器：
+（display: flex的兼容写法）
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex
+
+（align-items: center的兼容写法）
+-webkit-box-align:center;
+-ms-flex-align:center;
+align-items:center
+
+(justify-content:center兼容写法)
+-webkit-box-pack:center;
+-ms-flex-pack:center;
+justify-content:center;
