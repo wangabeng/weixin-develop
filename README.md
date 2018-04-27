@@ -158,4 +158,6 @@ align-items:center
 -ms-flex-pack:center;
 justify-content:center;
 
+# flex布局坑
+https://segmentfault.com/a/1190000006559564
 
