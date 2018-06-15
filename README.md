@@ -161,3 +161,6 @@ justify-content:center;
 # flex布局坑
 https://segmentfault.com/a/1190000006559564
 
+# 微信省市区三级联动封装
+https://www.jianshu.com/p/3040882e92cb
+github地址：https://github.com/leesonp/littleAPP 
