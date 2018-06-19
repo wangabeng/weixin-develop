@@ -164,3 +164,41 @@ https://segmentfault.com/a/1190000006559564
 # 微信省市区三级联动封装
 https://www.jianshu.com/p/3040882e92cb
 github地址：https://github.com/leesonp/littleAPP 
+
+# 微信修改数组某一个值
+html:
+<block wx:for='{{dataList}}' wx:key='{{index}}'>
+  <view bindtap='changeValue' data-index='{{index}}' data-item='{{item}}'>{{item + ' ' + index}}</view>
+</block>
+<view>common data</view>
+<view>{{curData}}</view>
+js:
+Page({
+  data: {
+    dataList: [123, 456],
+    curIndex: 0,
+    curData: ''
+  },
+  onReady () {
+    // 初始值设置为data1
+    this.setData({
+      curData: this.data.dataList[this.data.curIndex]
+    })
+  },
+  changeValue (e) {
+    console.log(e.currentTarget.dataset);
+    var index = e.currentTarget.dataset.index;
+    // this.setData({
+    //   dataList: [80, 90]
+    // });
+    this.setData({
+      // 'curData[1]': this.data.dataList[this.data.curIndex]
+      [`dataList[${this.data.curIndex}]`]: 1000
+    });
+    this.setData({
+      curData: this.data.dataList[this.data.curIndex]
+    });
+    // 重新修改curIndex
+    console.log(this.data.dataList);
+  }
+});
