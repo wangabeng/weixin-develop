@@ -1,0 +1,10 @@
+<block wx:for='{{regionArr}}' wx:key='{{index}}'>
+  <view class="section">
+    <view class="section__title">省市区选择器</view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{regionArr[index]}}" data-index='{{index}}'>
+      <view class="picker">
+        当前选择：{{regionArr[index][0]}}，{{regionArr[index][1]}}，{{regionArr[index][2]}}
+      </view>
+    </picker>
+  </view>
+</block>
