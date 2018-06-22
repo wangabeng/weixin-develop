@@ -167,6 +167,7 @@ https://www.jianshu.com/p/3040882e92cb
 github地址：https://github.com/leesonp/littleAPP 
 
 # 微信修改数组某一个值
+```
 html:
 <block wx:for='{{dataList}}' wx:key='{{index}}'>
   <view bindtap='changeValue' data-index='{{index}}' data-item='{{item}}'>{{item + ' ' + index}}</view>
@@ -203,3 +204,4 @@ Page({
     console.log(this.data.dataList);
   }
 });
+```
