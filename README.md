@@ -126,6 +126,7 @@ https://zhuanlan.zhihu.com/p/33274694
 
 ## 知乎 淘宝 flex布局兼容写法：
 父容器：
+```
 （display: flex的兼容写法）
 display:-webkit-box;
 display: -moz-box;
@@ -157,7 +158,7 @@ align-items:center
 -webkit-box-pack:center;
 -ms-flex-pack:center;
 justify-content:center;
-
+```
 # flex布局坑
 https://segmentfault.com/a/1190000006559564
 
