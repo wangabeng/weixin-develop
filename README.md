@@ -88,6 +88,7 @@ align-items: flex-start;// flex-start flex-end center center strech baseline
 所以 微信小程序node服务的代码必须上传到远程腾讯云服务器 才可以在本地请求到数据
 
 ## 小程序组件开发
+```
 https://www.jianshu.com/p/8a2a730d9e60
 1 新建目录
 components/songList/songList.wxml   1
@@ -119,7 +120,7 @@ pages/index
 }
 在index中使用
 <songList></songList>
-
+```
 ## 小程序组件之间的通信解决方案
 微信小程序组件化的解决方案
 https://zhuanlan.zhihu.com/p/33274694
@@ -212,7 +213,7 @@ bindconfirm="formSubmit"
 后 每次在手机键盘的完成按钮点击完成 就会触发提交事件 及触发formSubmit。
 相当于点击了<button formType="submit">提交</button> 触发了及触发formSubmit
 
-`
+```
 html:
     <form bindsubmit="formSubmit" bindreset="formReset">  
       <input type="text" class="input-text" name="username" placeholder="请输入姓名" bindconfirm="formSubmit" />
@@ -237,6 +238,6 @@ Page({
     console.log('reset');
   }
 })
-`
+```
 
 
