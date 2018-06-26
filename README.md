@@ -205,3 +205,38 @@ Page({
   }
 });
 ```
+
+## 小程序提交form表单
+给input框添加
+bindconfirm="formSubmit"
+后 每次在手机键盘的完成按钮点击完成 就会触发提交事件 及触发formSubmit。
+相当于点击了<button formType="submit">提交</button> 触发了及触发formSubmit
+
+`
+html:
+    <form bindsubmit="formSubmit" bindreset="formReset">  
+      <input type="text" class="input-text" name="username" placeholder="请输入姓名" bindconfirm="formSubmit" />
+      <checkbox-group name="hobby">  
+          <label><checkbox value="羽毛球"/>羽毛球</label>  
+          <label><checkbox value="游泳"/>游泳</label>  
+      </checkbox-group>
+      <view class="section btn-area">  
+          <button formType="submit">提交</button>  
+          <button formType="reset">清空</button>
+      </view>  
+    </form>
+
+JS:
+Page({
+  data: {
+  },
+  formSubmit (e) {
+    console.log('submit',e.detail.value);
+  },
+  formReset () {
+    console.log('reset');
+  }
+})
+`
+
+
