@@ -239,5 +239,17 @@ Page({
   }
 })
 ```
+## form内包含元素样式问题
+form元素内直接包含input元素 form设置flex定位 会出问题(input和image无法对齐)。如：
+```
+  <form>
+    <view class='search-wrapper'>
+      <input placeholder-class="phcolor" placeholder="请输入" />
+      <image src='./img/search.png'></image>
+    </view>
+  </form>
+````  
+解决办法：
+form内用一个view包裹层 然后 这个viw包裹层用flex定位，就可以解决。  
 
-
+# pages内的文件夹 不能有多余的文件 每一个app.json注册的页面都要在pages中注册 要一一对应 不能多也不能少。
