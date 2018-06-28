@@ -252,4 +252,12 @@ form元素内直接包含input元素 form设置flex定位 会出问题(input和i
 解决办法：
 form内用一个view包裹层 然后 这个viw包裹层用flex定位，就可以解决。  
 
-# pages内的文件夹 不能有多余的文件 每一个app.json注册的页面都要在pages中注册 要一一对应 不能多也不能少。
+## pages内的文件夹 不能有多余的文件 每一个app.json注册的页面都要在pages中注册 要一一对应 不能多也不能少。
+
+## 获取页面对象
+var pages = getCurrentPages()    //获取加载的页面
+var currentPage = pages[pages.length-1]    //获取当前页面的对象
+
+## 字体规范
+常用字号为20，18，17，16，14，13，11（pt）
+
