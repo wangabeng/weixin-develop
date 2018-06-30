@@ -266,3 +266,5 @@ var currentPage = pages[pages.length-1]    //获取当前页面的对象
 
 后端（如php端）
   为防止接口被任何人调用 需要在获取前台发送request请求时获取开发者的appId（注意 普通用户是没有这个appId的）。只有在后台数据库中授权的appId 才能通过验证 获取access_token 返回给前端
+
+## 关于小程序的background地址 不可以是本地图片 必须是网络图片 
